@@ -1,0 +1,70 @@
+﻿<UserControl x:Class="MysqlTools.View.Controls.ConnectControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MysqlTools.View.Controls"
+             xmlns:components="clr-namespace:MysqlTools.View.Components"
+             mc:Ignorable="d" 
+             Width="1000" Height="550" >
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+
+
+        <StackPanel>
+            <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,10">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="250"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Mysql Sunucusu :" VerticalAlignment="Center" Margin="0,0,10,0" FontSize="14" Foreground="{StaticResource Base.Text.S8}" Grid.Column="0" TextAlignment="Right"/>
+                <TextBox Style="{StaticResource defaultTextBox}" Width="250" Height="25" Grid.Column="1"  Text="{Binding MysqlServer}"/>
+            </Grid>
+
+            <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,10">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="250"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Database :" VerticalAlignment="Center" Margin="0,0,10,0" FontSize="14" Foreground="{StaticResource Base.Text.S8}" Grid.Column="0" TextAlignment="Right"/>
+                <TextBox Style="{StaticResource defaultTextBox}" Width="250" Height="25" Grid.Column="1"  Text="{Binding MysqlDatabase}"/>
+            </Grid>
+            
+            <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,10">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="250"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="UserName :" VerticalAlignment="Center" Margin="0,0,10,0" FontSize="14" Foreground="{StaticResource Base.Text.S8}" Grid.Column="0" TextAlignment="Right"/>
+                <TextBox Style="{StaticResource defaultTextBox}" Width="250" Height="25" Grid.Column="1"  Text="{Binding MysqlUser}"/>
+
+            </Grid>
+
+            <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,10">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="250"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="UserName :" VerticalAlignment="Center" Margin="0,0,10,0" FontSize="14" Foreground="{StaticResource Base.Text.S8}" Grid.Column="0" TextAlignment="Right"/>
+
+                <components:BindablePasswordBox Password="{Binding MysqlPsw,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="1"/>
+
+                <!--<PasswordBox  Style="{StaticResource defaultPasswordBox}" Width="250" Height="25" Grid.Column="1" Password="{Binding MySqlPsw}"/>-->
+
+            </Grid>
+
+
+            <Button Content="Connect" Style="{StaticResource defaultButton}" Command="{Binding MysqlConnect}" Height="30" Width="200" Margin="50"/>
+
+        </StackPanel>
+
+
+    </Grid>
+</UserControl>

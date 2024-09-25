@@ -1,0 +1,68 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <Color x:Key="Base.Shadow.Dark">#FF1C1E2F</Color>
+
+    <!-- Slate 950 -->
+    <SolidColorBrush x:Key="Base.Text.S95" Color="#020617" />
+
+
+    <!-- Slate 800 -->
+    <SolidColorBrush x:Key="Base.Text.S9" Color="#0f172a" />
+
+    <!-- Slate 800 -->
+    <SolidColorBrush x:Key="Base.Text.S8" Color="#1e293b" />
+
+    <!-- Slate 700 -->
+    <SolidColorBrush x:Key="Base.Text.S7" Color="#334155"/>
+
+    <!-- Slate 600 -->
+    <SolidColorBrush x:Key="Base.Text.S6" Color="#475569"/>
+
+    <!-- Slate 500 -->
+    <SolidColorBrush x:Key="Base.Text.S5" Color="#64748b"/>
+
+    <!-- Slate 500 -->
+    <SolidColorBrush x:Key="Base.Text.S4" Color="#94a3b8"/>
+
+    
+    <SolidColorBrush x:Key="Base.Text.Placeholder" Color="#A1A9BD"/>
+    <SolidColorBrush x:Key="Base.TextBox.ReadOnly" Color="#EFF2F6"/>
+    
+    
+
+    <SolidColorBrush x:Key="Base.Text.Succes" Color="#25b003"/>
+    <SolidColorBrush x:Key="Base.Text.Danger" Color="#dc2626"/>
+    
+
+
+    <SolidColorBrush x:Key="Base.Icon" Color="#FF1C1E2F"/>
+    <SolidColorBrush x:Key="Base.Icon.Second" Color="#FF31374A"/>
+    <SolidColorBrush x:Key="Base.Icon.Three" Color="#FF0284c7"/>
+    <SolidColorBrush x:Key="Base.Icon.Hover" Color="#FFdc2626"/>
+    <SolidColorBrush x:Key="Base.Icon.Input" Color="#FF31374a"/>
+
+    <SolidColorBrush x:Key="Base.Input.Insede" Color="#FFA1A9BD"/>
+    <SolidColorBrush x:Key="Base.Content" Color="#F8F9FA" />
+
+
+    <SolidColorBrush x:Key="Base.Nav" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="Base.Nav.Hover" Color="#fafafa" />
+
+
+
+    <SolidColorBrush x:Key="Base.Border" Color="#CBD0DD" />
+    <SolidColorBrush x:Key="Base.Background" Color="#F5F7FA"/>
+    <SolidColorBrush x:Key="Base.Background.Second" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="Base.Border.Three" Color="#EDEDED" />
+    <SolidColorBrush x:Key="Base.Border.Second" Color="#E3E6ED"/>
+
+
+    <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFd1d5db"/>
+    <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="#FF38bdf8"/>
+    <SolidColorBrush x:Key="TextBox.Focus.Border" Color="#FF0ea5e9"/>
+
+
+
+</ResourceDictionary>
